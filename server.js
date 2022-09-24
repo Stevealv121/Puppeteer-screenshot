@@ -4,7 +4,7 @@ const puppeteer = require("puppeteer");
 let app = express();
 
 let browserPromise = puppeteer.launch({
-
+    executablePath: '/usr/bin/google-chrome',
     args: [
         '--no-sandbox',
     ]
